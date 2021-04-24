@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+
+        body{
+            font-size: medium;
+        }
+
+
+        h6{
+            align-content: center;
+        }
+     </style>
+
+</head>
+<body>
+
+{#<p>  nutritionist_hetvi_HB </p>#}
+<pre class="tab">                                                     <b>nutritionist_hetvi_HB</b></pre>
+<hr>
+<br/>
+<p><b><u>Name</u>:</b> {{ profile.Name }}</p>
+<p><b><u>Weight</u>:</b> {{ profile.Weight }} Kg.</p>
+<p><b><u>Height</u>:</b> {{ profile.Height }} Cm.</p>
+<p><b><u>Gender</u>:</b> {{ profile.Gender }}</p>
+</br>
+<p><b><u>Due To Diet For</u>:</b> {{ profile.DueToDietFor }}</p>
+</br>
+<p><b><u>Carbohydrates</u>:</b> {{ profile.Carbohydrates }} %</p>
+<p><b><u>Fats</u>:</b> {{ profile.Fats }} %</p>
+<p><b><u>Protein</u>:</b> {{ profile.Protin }} %</p>
+</br>
+<dl>
+    <dt><b><u>After Wake Up</u></b>:</dt>
+    <dd>{{ profile.AfterWakeUp|linebreaks }}</dd>
+    </br>
+    <dt><b><u>Before Breakfast</u></b>:</dt>
+    <dd>{{ profile.BeforeBreakfast|linebreaks }}</dd>
+    </br>
+    <dt><b><u>Breakfast</u></b>:</dt>
+    <dd>{{ profile.Breakfast|linebreaks }}</dd>
+    </br>
+    <dt><b><u>Lunch</u></b>:</dt>
+    <dd>{{ profile.Lunch|linebreaks }}</dd>
+    </br>
+    <dt><b><u>Snacks</u></b>:</dt>
+    <dd>{{ profile.Snacks|linebreaks }}</dd>
+    </br>
+    <dt><b><u>Dinner</u></b>:</dt>
+    <dd>{{ profile.Dinner|linebreaks }}</dd>
+    </br>
+    <dt><b><u>Notes</u></b>:</dt>
+    <dd>{{ profile.Notes|linebreaks }}</dd>
+    </br>
+    <dt><b><u>Excercise</u></b>:</dt>
+    <dd class="show-white-space">{{ profile.Excercise|linebreaks }}</dd>
+    </br>
+
+</dl>
+<hr>
+
+</body>
+</html>
